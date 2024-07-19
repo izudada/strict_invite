@@ -1,37 +1,21 @@
-<!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
+{% block body %}
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="../static/css/styles.css">
-
-      <title>Strict Invite</title>
-   </head>
-   <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="#" class="nav__logo">toPnotcHkiddiZ</a>
+            <a href="/" class="nav__logo">toPnotcHkiddiZ</a>
 
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#" class="nav__link">HOME</a>
+                     <a href="/" class="nav__link">HOME</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">REGSITER</a>
+                     <a href="{% url 'event_signup' %}" class="nav__link">REGSITER</a>
                   </li>
 
                   <li class="nav__item">
@@ -146,5 +130,4 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="static/js/main.js"></script>
-   </body>
-</html>
+{% endblock %}
