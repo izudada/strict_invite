@@ -20,9 +20,12 @@ def user_profile_view(request):
             return redirect('user_profile_detail', user_profile.id)
     else:
         form = UserProfileForm()
-    return render(request, 'index.html', {'form': form})
+    return render(request, 'user_profile_form.html', {'form': form})
 
 def user_profile_detail(request, pk):
     user_profile = User.objects.get(pk=pk)
     qr_code_url = os.path.join(settings.MEDIA_URL, f'qrcodes/{pk}.png')
     return render(request, 'user_profile_detail.html', {'user_profile': user_profile, 'qr_code_url': qr_code_url})
+
+def index(request):
+    return render(request, 'index.html')

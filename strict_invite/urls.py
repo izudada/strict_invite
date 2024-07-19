@@ -6,6 +6,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.user_profile_view, name='user_profile_form'),
+    path('', views.index, name="index"),
+    path('event_signup', views.user_profile_view, name='event_signup'),
     path('<str:pk>/', views.user_profile_detail, name='user_profile_detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 6.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -63,7 +63,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
 
@@ -186,7 +186,7 @@ img {
 
 .home__data{
   text-align: center;
-  row-gap: 3.5rem;
+  row-gap: 1.5rem;
 }
 
 .home__content{
@@ -393,11 +393,11 @@ img {
     height: initial;
     grid-template-columns: repeat(3, 320px);
     justify-content: space-between;
-    padding-block: 11rem 4rem;
+    padding-block: 5rem 4rem;
   }
 
   .home__data{
-    row-gap: 9.5rem;
+    row-gap: 1.5rem;
   }
 
   .home__stars{
@@ -414,6 +414,7 @@ img {
 
   .home__info-description{
     font-size: var(--normal-font-size);
+    text-align: justify;
   }
 
   .home__info-content{
