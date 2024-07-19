@@ -5,40 +5,147 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="../static/css/styles.css">
 
-      <title>Responsive wacthes website - Bedimcode</title>
+      <title>Strict Invite</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="nav__logo">toPnotcHkiddiZ</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">HOME</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">REGSITER</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">ABOUT </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">CONTACT</a>
+                  </li>
+               </ul>
+
+               <div class="social">
+                  <a href="https://www.facebook.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://www.x.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+               </div>
+
+               <!-- Close Button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!-- Toggle Button -->
+             <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-fill"></i>
+             </div>
+         </nav>
       </header>
 
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home">
-            
+            <div class="home__container container">
+               <div class="home__data">
+                  <div class="home__content">
+                     <div class="hoe__stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                     </div>
+
+                     <h1 class="home__title">
+                        First school </br>
+                        No 2 echo road </br>
+                     </h1>
+                  </div>
+
+                  <h3 class="home__price">$620</h3>
+
+                  <a href="#" class="home__button">
+                     ADD TO CART
+                     <i class="ri-arrow-right-s-line">
+
+                     </i>
+                  </a>
+
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="../static/img/school_event_1.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="../static/img/school_event_2.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="../static/img/school_event_3.png" alt="image" class="home__img">
+                        </article>
+                     </div>
+                  </div>
+
+                  <!-- If pagination is needed -->
+                   <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="home__info">
+                  <img src="../static/img/main_event.png" alt="image" class="home__info-img">
+
+                  <div class="home__info-content">
+                     <p class="home__info-description">
+                        Personalized watches are a job of quality 
+                        and commitment. Each piece is the result of a 
+                        work of co-creation of innovation and responsible 
+                        sensitivity for users.
+                     </p>
+
+                     <a href="3" class="home__button-link">REGISTER</a>
+                  </div>
+               </div>
+            </div>
          </section>
       </main>
 
       <!--=============== GSAP ===============-->
-      <script src=""></script>
+      <script src="../static/js/gsap.min.js"></script>
 
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      <script src="../static/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="static/js/main.js"></script>
    </body>
 </html>

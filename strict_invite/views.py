@@ -20,7 +20,7 @@ def user_profile_view(request):
             return redirect('user_profile_detail', user_profile.id)
     else:
         form = UserProfileForm()
-    return render(request, 'user_profile_form.html', {'form': form})
+    return render(request, 'index.html', {'form': form})
 
 def user_profile_detail(request, pk):
     user_profile = User.objects.get(pk=pk)
