@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 6.5rem;
+  --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -220,6 +220,7 @@ img {
   align-items: center;
   column-gap: 1.5rem;
   transition: border-color .4s;
+  text-decoration: none;
 }
 
 .home__buton i{
@@ -228,6 +229,12 @@ img {
 
 .home__buttom:hover{
   border-color: var(--title-color);
+}
+
+.home__button,
+.home__button:hover,
+.home__button-link{
+  text-decoration: none;
 }
 
 .home__images{
@@ -265,10 +272,12 @@ img {
   letter-spacing: 3px;
   justify-self: flex-start;
   transition: color .4s;
+  text-decoration: none;
 }
 
 .home__button-link:hover{
   color: var(--title-color);
+  text-decoration: none;
 }
 
 /* Swiper class */
@@ -320,6 +329,7 @@ img {
 
   .home__button-link{
     justify-self: center;
+    text-decoration: none;
   }
 }
 
@@ -351,6 +361,7 @@ img {
   .nav__list{
     flex-direction: row;
     column-gap: 4rem;
+    padding-top: 10px;
   }
 
   .nav__social{
@@ -373,8 +384,14 @@ img {
   }
 
   .home__button{
-    justify-self: flex-start;
+    justify-self: flex-start
   }
+
+  .home__button,
+  .home__button:hover{
+    text-decoration: none;
+  }
+
 
   .home__info{
     margin: 0;
@@ -428,4 +445,25 @@ img {
     height: 100vh;
     align-items: center;
   }
+}
+
+
+/*======================= USER REGISTRATION FORM ======================= */
+
+.user-form{
+  padding-block: 3.5rem 3.5rem;
+}
+
+.form{
+  width: 50% !important;
+}
+
+.form-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-section img{
+  width: 32%;
+  border-radius: 5px;
 }
