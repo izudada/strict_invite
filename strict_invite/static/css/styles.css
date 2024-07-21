@@ -233,7 +233,8 @@ img {
 
 .home__button,
 .home__button:hover,
-.home__button-link{
+.home__button-link,
+a{
   text-decoration: none;
 }
 
