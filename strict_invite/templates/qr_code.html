@@ -1,52 +1,160 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Angels and Prodigies QR-Code</title>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format("woff2");
+        }
+        body,
+        header,
+        footer{
+            display: flex;
+        }
+        header,
+        footer{
+            padding: 10px 30px !important;
+        }
 
-          <!-- Bootstrap CSS -->
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        body{
+            font-family: "Roboto";
+            max-width: 350px;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            width: 350px;
+            align-items: center;
+            background-color: #d3e3f9c9;
+        }
+        header img {
+            width: 30%;
+        }
+        h2{
+            font-family: "Roboto";
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin: auto;
+            padding: 8px;
+            line-height: 26px;
+            letter-spacing: 0.005em;
+        }
+        .wrapper {
+            width: 350px;
+            background-color: #ffffff;
+            padding-left: 30px 30px 30px 5px;
+        }
+        .wrapper p {
+            font-family: "Roboto";
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.73);
+            text-align: left;
+        }
+        footer{
+            width: 350px;
+            background-color: #293B81;
+            color: #ffffff;
+            font-size: 12px;
+            text-align: justify;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            height: 140px;
+        }
+        footer p{
+            text-align: justify;
+        }
+        .footer__items{
+            width: 33%;
+        }
+        .footer_logo{
+            width: 95%;
+        } 
+        .footer_img{
+            width: 60%;
+            height: 40px;
+            background-color: #ffffff;
+        } 
+        .socials{
+            text-align: center;
+        }.address{
+            padding-right: 10px;
+        }
+    </style>
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+<body>
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
+    <header>
+        <img src="https://www.topnotchkiddiz.com/assets/img/logo.png" alt="Email Header Logo">
+    </header>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="../static/css/styles.css">
+    <div class="wrapper" style="padding-left: 30px !important;">
+        <h2>Angels and Prodigies 3.0 QR Code</h2>
 
-      <title>Topnotchkiddiz Invite</title>
-   </head>
-   <body style="background-color: #6aa7fac9; color: #000000; text-align: justify;">
-        <div class="container" style="width: 70%; justify-content: center; align-items: center; text-align: center;">
-            
-            <img 
-                style="width: 40%; margin: 20px;"
-                src="https://www.topnotchkiddiz.com/assets/img/logo.png" 
-                alt="Topnotchkiddiz Logo"
-            >
-            
-            <h1> Your Topnotchkiddiz QR Code</h1>
-            <p style="font-size: 12pt;">
-                Hi {{ display_name }}, <br> <br>
-
-                Attached to this email is your QR-Code for Topnotchkiddiz event. 
-                You will be required to show this code for scanning and identification  at the entrance of the
-                Topnotchkiddiz event before entry.
-            </p>
-            <p style="font-size: 10pt; letter-spacing: 1px;">
-                Regards, <br>
-                Administrator (Topnotchkiddiz School)
+        <p>Hi {{ display_name }},</p>
+    
+        <p>
+            Attached to this email is your meal ticket (QR code) for the Angels and Prodigies 3.0 event. 
+        </p>
+    
+        <p>
+            You will need to present this ticket (QR code ) for verification and meal allocation at the event.
+        </p>
+    
+        <p>
+            Kindly ensure you come along with your phone or print your unique QR code for scanning.
+        </p>
+    
+        <p>
+            Ap 3.0 Edition <br>
+            <strong>Committee Chairman</strong> 
+        </p>
+    </div>
+    
+    <footer>
+        <div class="footer__items">
+            <div class="footer_img">
+                <img class="footer_logo" src="https://www.topnotchkiddiz.com/assets/img/logo.png" alt="Topnotchkiddiz Logo">
+            </div>
+            <p>
+                <h4> Join us for Angels and Prodigies 3.0! RSVP now! </h4> <br> <br>
             </p>
         </div>
+        <div class="footer__items socials">
+            <h4>Digital Links</h4>
+            <div>
+                <a href="https://www.topnotchkiddiz.com/about.php#" style="color: #ffffff; text-decoration: none; margin: 0 15px;">
+                    <i class="fab fa-instagram" style="font-size: 0.9em;"></i>
+                </a>
+                <a 
+                    href="https://web.facebook.com/TOP-NOTCH-International-School-1610307732409089/?hc_ref=ARRHg8M_LcOmx5lcX6QhwP9Wa1mGIchGkE5bpwijMyaq-UJFl2K43f-Q8EhFwLtULy0&fref=nf&__tn__=kC-R"
+                    style="color: #fff; text-decoration: none; margin: 0 15px;"
+                >
+                    <i class="fab fa-facebook-f" style="font-size: 0.9em;"></i>
+                </a>
+                <a href="https://www.topnotchkiddiz.com" style="color: #ffffff; text-decoration: none; margin: 0 10px;">
+                    <i class="fas fa-globe" style="font-size: 0.9em;"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer__items address">
+            <p><i class="fas fa-map-marker-alt" style="font-size: 1.2em; color: #fff;"></i> 3 Onukem Avenue, Okporo Road, Port Harcourt, Rivers State.</p>
+            <p><i class="fas fa-phone-alt" style="font-size: 1.2em; color: #fff;"></i> 
+                +234 803 675 3209</p>
+            <p><i class="fas fa-envelope" style="font-size: 1.2em; color: #fff !important; text-decoration: none !important;"></i> 
+                topnotchkiddiz@gmail.com</p>
+        </div>
 
-      <!-- Bootstrap JS and dependencies -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+    </footer>
+
+</body>
 </html>
